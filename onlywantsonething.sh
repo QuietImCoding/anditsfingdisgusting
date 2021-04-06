@@ -16,7 +16,7 @@ wget --directory-prefix tmp $wantpic
 
 convert tmp/$profloc -resize 200x200^ tmp/$profloc
 convert tmp/template.png tmp/$profloc -geometry +50+50 -composite tmp/int_1.png
-convert tmp/$wantloc -resize 90000@ tmp/$wantloc
+convert tmp/$wantloc -resize 650x275 tmp/$wantloc
 convert tmp/int_1.png tmp/$wantloc -gravity Center -geometry +0+200 -composite tmp/out.png
 
 open tmp/
